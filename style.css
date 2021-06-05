@@ -4,10 +4,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.title {
-  color: #6070ff;
-}
-
 .img-bg {
   width: 295px;
   height: 220px;
@@ -24,14 +20,6 @@ body {
 section {
   margin-left: 10px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.headline {
-  display: flex;
-  flex-direction: column;
 }
 
 .dropdown {
@@ -49,6 +37,16 @@ li {
   font-size: 13px;
   line-height: 16px;
   margin-left: 50px;
+}
+
+.title {
+  color: #6070ff;
+  margin-left: 20px;
+}
+
+.headline {
+  width: 300px;
+  margin-left: 23px;
 }
 
 .judul {
@@ -87,7 +85,6 @@ li {
 
 .container {
   padding: 16px 16px 16px 16px;
-  display: grid;
 }
 
 h2 {
@@ -100,7 +97,7 @@ h2 {
 
 .n {
   margin-top: -10px;
-  margin-left: -60px;
+  margin-left: -85px;
 }
 
 .text-description-project {
@@ -110,6 +107,7 @@ h2 {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  margin-left: -0.1px;
 }
 
 p {
@@ -158,6 +156,57 @@ h3 {
   color: #6070ff;
 }
 
-.skills {
+.about-my-self {
+  width: 300px;
+}
+
+.text-languages {
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  width: 237px;
+}
+
+.arrdown {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  position: absolute;
+  margin-left: 130px;
+  margin-top: -40px;
+}
+
+.nnjjn {
+  margin-top: -30px;
+}
+
+.image-coding {
+  margin-top: 15px;
+  background: rgba(230, 234, 238, 1);
+  width: 250px;
+  height: 70px;
+}
+
+.round-img {
+  padding: 12px 9px 9.7px;
+}
+
+.text-language-image {
+  margin-left: 75px;
+  margin-top: -50px;
+}
+
+.arrright {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  position: absolute;
+  margin-left: 240px;
+  margin-top: -40px;
+}
+
+.a {
   margin-top: 10px;
 }
