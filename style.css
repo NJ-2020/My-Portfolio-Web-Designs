@@ -135,7 +135,7 @@ h3 {
   margin-left: 7px;
 }
 
-.input {
+.forms-input {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -144,7 +144,7 @@ h3 {
   color: #172b4d;
 }
 
-.msg {
+#message {
   color: #b3bac5;
   width: 327px;
   height: 170px;
@@ -258,7 +258,7 @@ h3 {
   color: #fff;
 }
 
-.forms-input {
+.forms_input {
   padding: 24px 24px;
 }
 
