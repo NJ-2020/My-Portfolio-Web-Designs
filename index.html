@@ -154,14 +154,23 @@
           with it
         </p>
 
-        <div class="forms-input">
-          <button class="form_control">yahya</button><br />
-          <button class="form_control">ntt.london@gmail.com</button><br />
-          <button class="msg">Write your massage here</button><br />
-
-          <button class="contact-button">Get It touch</button>
+        <form class="forms-input" action="https://formspree.io/f/{form_id}" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" maxlength="30" required>
+          </div>
+          <div>
+            <label for="email">email</label>
+            <input name="email"  type="email" id="form_control" required>
+          </div>
+          <div>
+            <label for="massage">message</label>
+            <input name="massage" type="text" id="massage" maxlength="500"  required>
+          </div>
+          
+          <button type="submit" id="contact-button">Get It touch</button>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
