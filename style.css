@@ -142,6 +142,7 @@ h3 {
   width: 327px;
   height: 48px;
   color: #172b4d;
+  margin-bottom: 1em;
 }
 
 .msg {
@@ -151,8 +152,7 @@ h3 {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  align-items: flex-start;
-  margin-top: 10px;
+  padding-bottom: -3em;
 }
 
 .contact {
@@ -260,9 +260,4 @@ h3 {
 
 .forms-input {
   padding: 24px 24px;
-}
-
-.msg {
-  margin-top: 10px;
-  padding-bottom: 2em;
 }
