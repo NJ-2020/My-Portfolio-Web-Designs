@@ -4,7 +4,7 @@
 
 > This project is a Microverse task to build personal portfolio, to parse a Figma design, use Flexbox and CSS Grid to place elements in the page.  It covers html and css and applying linters on each of them.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.jpg)
 
 Additional description about the project and its features.
 
