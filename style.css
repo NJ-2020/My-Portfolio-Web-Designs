@@ -45,7 +45,7 @@ nav ul li a {
 
 /* welcome section start */
 .headline-section {
-  background-image: url(img/Header_bg.svg);
+  background-image: url(IMG/Header_bg.svg);
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: top;
@@ -253,7 +253,7 @@ nav ul li a {
   /* header hero section */
 
   .headline-section {
-    background-image: url(img/Desktop-header-bg.svg);
+    background-image: url(IMG/Desktop-header-bg.svg);
     justify-content: center;
     align-items: center;
   }
@@ -571,8 +571,12 @@ h3 {
   outline: none;
   border-radius: 5px;
   border: none;
-  width: 95%;
+  width: 55%;
   margin-top: 10px;
+}
+
+.form-control {
+  width: 327px;
 }
 
 .contact-btn {
