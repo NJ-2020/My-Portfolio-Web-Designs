@@ -560,11 +560,11 @@ h3 {
   font-weight: 400;
   line-height: 28px;
   color: #ebebff;
-  margin-bottom: 87px;
+  margin-bottom: 37px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 569px;
+  width: 389px;
 }
 
 .form-input input,
@@ -574,7 +574,7 @@ h3 {
   outline: none;
   border: none;
   margin-top: 10px;
-  width: 447px;
+  width: 347px;
 }
 
 .form-control {
