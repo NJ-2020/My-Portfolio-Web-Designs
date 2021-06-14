@@ -117,7 +117,7 @@ nav ul li a {
   background: #fff;
   border: solid #dfe1e6 1px;
   border-radius: 16px;
-  width: 500px;
+  max-width: 300px;
 }
 
 .work-cardFirst {
@@ -564,22 +564,33 @@ h3 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 389px;
+  max-width: 400px;
 }
 
-.form-input input,
+.form-input input {
+  background-color: #fff;
+  padding: 12px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  max-width: 700px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: -10px;
+}
+
 .form-input textarea {
   background-color: #fff;
   padding: 12px;
   outline: none;
   border: none;
   margin-top: 10px;
-  width: 347px;
+  max-width: 400px;
   font-family: 'Poppins', sans-serif;
+  margin-left: -10px;
 }
 
 .form-control {
-  width: 327px;
+  width: 185px;
 }
 
 .contact-btn {
