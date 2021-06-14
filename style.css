@@ -575,7 +575,7 @@ h3 {
   margin-top: 10px;
   max-width: 700px;
   font-family: 'Poppins', sans-serif;
-  margin-left: -10px;
+  margin-left: -15px;
 }
 
 .form-input textarea {
@@ -586,11 +586,12 @@ h3 {
   margin-top: 10px;
   max-width: 400px;
   font-family: 'Poppins', sans-serif;
-  margin-left: -10px;
+  margin-left: -15px;
+  width:200px;
 }
 
 .form-control {
-  width: 185px;
+  width: 200px;
 }
 
 .contact-btn {
