@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo Of The Project
 
-https://nj-2020.github.io/Portfolio-Mobile-Version_w1d4/
+https://nj-2020.github.io/My-Portfolio-Web-Designs/
 
 ### Usage
 
