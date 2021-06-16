@@ -45,7 +45,7 @@ nav ul li a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 50px 24px;
   justify-content: center;
   border-bottom-left-radius: 90px;
 }
@@ -117,8 +117,8 @@ nav ul li a {
 }
 
 .work-name {
-  margin-top: 12px;
-  margin-bottom: 20px;
+  /* margin-top: 12px;
+  margin-bottom: 20px; */
   color: #172b4d;
   font-weight: 700;
   font-size: 32px;
@@ -292,9 +292,11 @@ nav ul li a {
 
   /* card styles */
   .work-container {
-    align-self: flex-start;
-    margin-left: 46px;
+    /* align-self: flex-start; */
+    /* margin-left: 46px; */
     margin-right: 46px;
+    margin-top: 20px;
+    width: 100%;
   }
 
   .work-card-reverse .work-container {
@@ -311,10 +313,10 @@ nav ul li a {
   }
 
   .work-name {
-    margin-top: 48px;
+    /* margin-top: 48px; */
     font-size: 40px;
     line-height: 52px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .work-info .info-main {
@@ -353,7 +355,7 @@ nav ul li a {
     font-size: 17px;
     font-weight: 500;
     line-height: 24px;
-    margin-top: 56px;
+    /* margin-top: 56px; */
   }
 
   .technologies {
