@@ -293,6 +293,7 @@ nav ul li a {
   /* card styles */
   .work-container {
     /* align-self: flex-start; */
+
     /* margin-left: 46px; */
     margin-right: 46px;
     margin-top: 20px;
@@ -316,6 +317,7 @@ nav ul li a {
     /* margin-top: 48px; */
     font-size: 40px;
     line-height: 52px;
+
     /* margin-bottom: 20px; */
   }
 
@@ -355,6 +357,7 @@ nav ul li a {
     font-size: 17px;
     font-weight: 500;
     line-height: 24px;
+
     /* margin-top: 56px; */
   }
 
