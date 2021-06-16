@@ -95,6 +95,11 @@ nav ul li a {
 }
 
 /* Work Section */
+
+.hidden-heading {
+  display: none;
+}
+
 .works-section {
   display: grid;
   grid-template-columns: 1fr;
