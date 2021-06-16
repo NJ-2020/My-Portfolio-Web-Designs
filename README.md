@@ -1,12 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project: Application deploy
+# Project: Portfolio
 
 > This project is a Microverse task to build personal portfolio, to parse a Figma design, use Flexbox and CSS Grid to place elements in the page.  It covers html and css and applying linters on each of them.
 
 ![screenshot](screenshot.jpeg)
 
-Additional description about the project and its features.
+New additions:
+
+* Using pair programming: evaluate, report and correct the accessibility for page titles, image text alternatives, text headings, color contrast, resize, interaction, moving content, multimedia and the basic structure of the page
 
 ## Built With
 
@@ -37,13 +39,17 @@ npx stylelint "**/*.{css,scss}"
 ```
 ### Deployment
 
-Make a pull request if your want to contribute. Thanks.
+Make a pull request if you want to contribute. Thanks.
 
 ## Authors
 
 👤 **NJ-2020**
 
 - GitHub: [NJ](https://github.com/NJ-2020)
+
+👤 **AkashaRojee**
+
+- GitHub: [AkashaRojee](https://github.com/AkashaRojee)
 
 ## 🤝 Contributing
 

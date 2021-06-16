@@ -26,14 +26,6 @@ nav ul {
   justify-content: space-between;
 }
 
-.logo h4 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  color: #7f8cff;
-}
-
 nav ul li a {
   text-decoration: none;
   color: #333;
@@ -53,7 +45,7 @@ nav ul li a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 50px 24px;
   justify-content: center;
   border-bottom-left-radius: 90px;
 }
@@ -75,8 +67,8 @@ nav ul li a {
   width: 327px;
 }
 
-.connect-link a {
-  color: #7f8cff;
+.connect-link {
+  color: #1d33fc;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -103,6 +95,11 @@ nav ul li a {
 }
 
 /* Work Section */
+
+.hidden-heading {
+  display: none;
+}
+
 .works-section {
   display: grid;
   grid-template-columns: 1fr;
@@ -125,8 +122,8 @@ nav ul li a {
 }
 
 .work-name {
-  margin-top: 12px;
-  margin-bottom: 20px;
+  /* margin-top: 12px;
+  margin-bottom: 20px; */
   color: #172b4d;
   font-weight: 700;
   font-size: 32px;
@@ -143,7 +140,7 @@ nav ul li a {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #4a4f59;
 }
 
 .work-info .info-sep {
@@ -170,7 +167,7 @@ nav ul li a {
   letter-spacing: 3%;
   padding: 4px 12px;
   margin-right: 20px;
-  color: #6070ff;
+  color: #0018f0;
   background-color: #ebebff;
   border-radius: 8px;
 }
@@ -179,12 +176,11 @@ nav ul li a {
   padding: 14px;
   margin-top: 26px;
   margin-bottom: 40px;
-  color: #396df2;
+  color: #1748c4;
   font-size: 17px;
   font-weight: 500;
-  border: solid 2px #396df2;
+  border: solid 2px #1748c4;
   border-radius: 9px;
-  outline: none;
   background-color: #fff;
   letter-spacing: 3%;
 }
@@ -301,9 +297,12 @@ nav ul li a {
 
   /* card styles */
   .work-container {
-    align-self: flex-start;
-    margin-left: 46px;
+    /* align-self: flex-start; */
+
+    /* margin-left: 46px; */
     margin-right: 46px;
+    margin-top: 20px;
+    width: 100%;
   }
 
   .work-card-reverse .work-container {
@@ -320,10 +319,11 @@ nav ul li a {
   }
 
   .work-name {
-    margin-top: 48px;
+    /* margin-top: 48px; */
     font-size: 40px;
     line-height: 52px;
-    margin-bottom: 20px;
+
+    /* margin-bottom: 20px; */
   }
 
   .work-info .info-main {
@@ -362,7 +362,8 @@ nav ul li a {
     font-size: 17px;
     font-weight: 500;
     line-height: 24px;
-    margin-top: 56px;
+
+    /* margin-top: 56px; */
   }
 
   .technologies {
@@ -406,11 +407,11 @@ nav ul li a {
   margin-top: 12px;
 }
 
-h3 {
+.social-connect p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1d33fc;
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -422,15 +423,15 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   display: inline-block;
-  color: #396df2;
+  color: #1748c4;
   padding: 12px;
-  border: 1px solid #396df2;
+  border: 1px solid #1748c4;
   border-radius: 8px;
   margin-top: 22px;
 }
 
 .about .about-info .get-resume:hover {
-  background-color: #396df2;
+  background-color: #1748c4;
   color: #fff;
   transition: 0.3s;
 }
@@ -500,7 +501,7 @@ h3 {
     width: 40%;
   }
 
-  .about .about-info .social-connect h3 {
+  .about .about-info .social-connect p {
     margin-bottom: 26px;
   }
 
@@ -538,7 +539,7 @@ h3 {
 }
 
 .contact-section form {
-  background-color: #6070ff;
+  background-color: #0f22cc;
   padding: 100px;
   text-align: center;
 }
@@ -598,12 +599,11 @@ h3 {
   padding: 14px;
   margin-top: 26px;
   margin-bottom: 40px;
-  color: #396df2;
+  color: #1748c4;
   font-size: 17px;
   font-weight: 500;
-  border: solid 2px #396df2;
+  border: solid 2px #1748c4;
   border-radius: 9px;
-  outline: none;
   background-color: #fff;
   letter-spacing: 3%;
 }
