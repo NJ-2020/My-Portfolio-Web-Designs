@@ -32,7 +32,7 @@
     <!-- nav start -->
     <nav>
       <div class="logo">
-        <img src="IMG/my-logo.png" alt="">
+        <img src="IMG/my-logo.png" alt="" />
       </div>
       <ul>
         <li>
@@ -119,8 +119,55 @@
               <li class="lang-section">css</li>
               <li class="lang-section">javascript</li>
             </ul>
-            <button type="button" class="work-btn">See Project</button>
+            <button type="button" data-modal-target="#modal" class="work-btn">
+              See Project
+            </button>
           </div>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">Tonic</div>
+
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+
+            <ul class="modal-language">
+              <li>HTML/CSS</li>
+              <li>JS</li>
+              <li>RUBY ON RAILS</li>
+            </ul>
+
+            <div class="modal-body">
+              <img
+                src="img/work-img/work-preview1.png"
+                class="img-modal"
+                alt="tonic"
+              /><br />
+              <p class="modal-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                voluptatem possimus ea unde! Quo asperiores aspernatur placeat
+                quis, repellat, maiores nisi eligendi ipsam recusandae ipsa
+                fugiat ratione iure, veritatis quas!
+              </p>
+
+              <div class="modal-cta">
+                <a href="https://github.com"
+                  ><button class="button-modal">
+                    See Live <img src="IMG/Icon.png" alt="" /></button
+                ></a>
+                <a href="https://github.com"
+                  ><button class="button-modal">
+                    See Source <img src="IMG/gitHubIcon.svg" alt="" /></button
+                ></a>
+              </div>
+
+              <div class="modal-footer">
+                <a href="#">Previous Project</a>
+                <a href="#">Next Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="overlay"></div>
         </li>
 
         <li class="work-card work-cardFirst">
