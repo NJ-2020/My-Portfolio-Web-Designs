@@ -25,6 +25,10 @@ nav ul {
   justify-content: space-between;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -688,7 +692,7 @@ nav ul li a {
   border: 1px solid black;
   z-index: 10;
   background-color: white;
-  width: 343;
+  width: 343px;
   max-width: 80%;
   overflow-y: auto;
   height: 600px;
@@ -760,10 +764,6 @@ nav ul li a {
   border-color: #2230d2;
 }
 
-a {
-  text-decoration: none;
-}
-
 .modal-cta {
   justify-content: space-between;
   display: flex;
@@ -793,20 +793,16 @@ a {
   pointer-events: none;
 }
 
-.img-modal {
-  width: 713px;
-}
-
 #overlay.active {
   opacity: 1;
   pointer-events: all;
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
   .modal-footer {
     display: none;
   }
- 
+
   .img-modal {
     width: 300px;
   }
