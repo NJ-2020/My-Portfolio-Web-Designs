@@ -23,6 +23,8 @@
 
       gtag("config", "G-L9EM4V5T72");
     </script>
+    <!-- end of Google Analytic -->
+
     <title>Novell's Portfolio</title>
   </head>
 
@@ -30,19 +32,28 @@
     <!-- nav start -->
     <nav>
       <div class="logo">
-        <img src="IMG/my-logo.png" alt="Novell's Logo">
+        <img src="IMG/my-logo.png" alt="">
       </div>
-
       <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Home</a></li>
+        <li>
+          <a class="nav-link" href="#work">Portfolio</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
       </ul>
 
       <div class="menu-toggle">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
+
     <!-- Hero section -->
     <section class="headline-section">
       <div class="headline-content">
@@ -63,7 +74,9 @@
             <a href="#"><img src="IMG/twiterIcon.svg" alt="Twitter icon" /></a>
           </li>
           <li class="social-icon">
-            <a href="#"><img src="IMG/linkedinIcon.svg" alt="Linkedin icon" /></a>
+            <a href="#"
+              ><img src="IMG/linkedinIcon.svg" alt="Linkedin icon"
+            /></a>
           </li>
           <li class="social-icon">
             <a href="#"><img src="IMG/mIcon.svg" alt="Medium icon" /></a>
@@ -81,9 +94,12 @@
     <section id="work">
       <h2 class="hidden-heading">Works</h2>
       <ul class="works-section">
-
         <li class="work-card work-cardFirst">
-          <img src="IMG/work-img/work-preview1.png" class="work-img" alt="Screenshot of Tonic website" />
+          <img
+            src="IMG/work-img/work-preview1.png"
+            class="work-img"
+            alt="Screenshot of Tonic website"
+          />
 
           <div class="work-container">
             <h3 class="work-name">Tonic</h3>
@@ -106,9 +122,13 @@
             <button type="button" class="work-btn">See Project</button>
           </div>
         </li>
-        
+
         <li class="work-card work-cardFirst">
-          <img src="IMG/work-img/work-preview2.png" class="work-img" alt="Screenshot of Multi-Post Stories website" />
+          <img
+            src="IMG/work-img/work-preview2.png"
+            class="work-img"
+            alt="Screenshot of Multi-Post Stories website"
+          />
 
           <div class="work-container">
             <h3 class="work-name">Multi-Post Stories</h3>
@@ -135,7 +155,11 @@
         </li>
 
         <li class="work-card work-cardFirst">
-          <img src="IMG/work-img/work-preview3.svg" class="work-img" alt="Screenshot of Facebook 360 website" />
+          <img
+            src="IMG/work-img/work-preview3.svg"
+            class="work-img"
+            alt="Screenshot of Facebook 360 website"
+          />
 
           <div class="work-container">
             <h3 class="work-name">Facebook 360</h3>
@@ -162,7 +186,11 @@
         </li>
 
         <li class="work-card work-cardFirst">
-          <img src="IMG/work-img/work-preview4.png" class="work-img" alt="Screenshot of Uber Navigation website" />
+          <img
+            src="IMG/work-img/work-preview4.png"
+            class="work-img"
+            alt="Screenshot of Uber Navigation website"
+          />
 
           <div class="work-container">
             <h3 class="work-name">Uber Navigation</h3>
@@ -188,7 +216,7 @@
         </li>
       </ul>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-info">
         <div class="about-info-text">
           <h2>About<br />Myself</h2>
@@ -236,7 +264,11 @@
           <li class="skill active-skill">
             <div class="skill-name">
               <p class="name">Langguages</p>
-              <a href="#"><img src="IMG/arrDown.png" alt="Arrow icon to collapse section"/></a>
+              <a href="#"
+                ><img
+                  src="IMG/arrDown.png"
+                  alt="Arrow icon to collapse section"
+              /></a>
             </div>
             <ul class="inner-skills">
               <li><img src="IMG/jsLogo.png" alt="JS Logo" />JavaScript</li>
@@ -248,7 +280,11 @@
             <div class="skill">
               <div class="skill-name">
                 <p class="name">Frameworks</p>
-                <a href="#"><img src="IMG/arrRight.png" alt="Arrow icon to expand section"/></a>
+                <a href="#"
+                  ><img
+                    src="IMG/arrRight.png"
+                    alt="Arrow icon to expand section"
+                /></a>
               </div>
             </div>
           </li>
@@ -256,7 +292,11 @@
             <div class="skill">
               <div class="skill-name">
                 <p class="name">Skills</p>
-                <a href="#"><img src="IMG/arrRight.png" alt="Arrow icon to expand section" /></a>
+                <a href="#"
+                  ><img
+                    src="IMG/arrRight.png"
+                    alt="Arrow icon to expand section"
+                /></a>
               </div>
             </div>
           </li>
@@ -264,7 +304,7 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <form action="https://formspree.io/f/mayajwnb" method="post">
         <h2 class="contact-me-title">Contact Me</h2>
         <p class="contact-me-info">
@@ -298,5 +338,6 @@
         <button type="submit" class="contact-btn">Get In Touch</button>
       </form>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

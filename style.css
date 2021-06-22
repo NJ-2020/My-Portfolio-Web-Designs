@@ -10,12 +10,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* nav start */
 nav {
   display: flex;
-  background-color: #fff;
+  background-color: white;
   justify-content: space-around;
-  height: 70px;
+  height: 75px;
   align-items: center;
 }
 
@@ -28,12 +27,110 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: black;
+  font-family: sans-serif;
+  font-size: 25px;
 }
 
-/* nav ul li a:hover {
-  color: black;
-} */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -5px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #6070ff;
+  border-radius: 3px;
+  transition: all 0.5s;
+  margin-top: 5px;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: teal;
+    justify-content: space-evenly;
+    z-index: 1;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0.9 !important;
+  }
+
+  nav ul li a {
+    color: white;
+    margin-left: 30px;
+  }
+
+  nav ul.slide {
+    opacity: 0.8;
+    transform: translateX(0);
+    background-color: #6070ff;
+    color: white;
+  }
+
+  .menu-toggle.slide {
+    background-color: white;
+  }
+
+  .header {
+    height: 100vh;
+    background-image: url(./assets/header-shapes\ mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
 
 /* welcome section start */
 .headline-section {
@@ -95,7 +192,6 @@ nav ul li a {
 }
 
 /* Work Section */
-
 .hidden-heading {
   display: none;
 }
@@ -122,8 +218,6 @@ nav ul li a {
 }
 
 .work-name {
-  /* margin-top: 12px;
-  margin-bottom: 20px; */
   color: #172b4d;
   font-weight: 700;
   font-size: 32px;
@@ -198,20 +292,8 @@ nav ul li a {
   border-color: #2230d2;
 }
 
-/* Hamburger menu */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-}
-
 /* make it Responsive */
 @media screen and (max-width: 768px) {
-  nav ul {
-    width: 50%;
-  }
-
   .wrapper {
     width: 600px;
     margin: 0 auto;
@@ -226,17 +308,6 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 576px) {
-  nav ul {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    font-size: 20px;
-  }
-}
-
 .social-icon ul {
   display: flex;
   list-style: none;
@@ -247,7 +318,6 @@ nav ul li a {
 
 @media screen and (min-width: 992px) {
   /* header hero section */
-
   .headline-section {
     background-image: url(IMG/Desktop-header-bg.svg);
     justify-content: center;
@@ -297,9 +367,6 @@ nav ul li a {
 
   /* card styles */
   .work-container {
-    /* align-self: flex-start; */
-
-    /* margin-left: 46px; */
     margin-right: 46px;
     margin-top: 20px;
     width: 100%;
@@ -319,11 +386,8 @@ nav ul li a {
   }
 
   .work-name {
-    /* margin-top: 48px; */
     font-size: 40px;
     line-height: 52px;
-
-    /* margin-bottom: 20px; */
   }
 
   .work-info .info-main {
@@ -362,8 +426,6 @@ nav ul li a {
     font-size: 17px;
     font-weight: 500;
     line-height: 24px;
-
-    /* margin-top: 56px; */
   }
 
   .technologies {
@@ -377,7 +439,7 @@ nav ul li a {
   color: #172b4d;
   font-size: 40px;
   font-weight: bold;
-  line-height: 52px;
+  line-height: 51px;
 }
 
 .inner-skills li {
@@ -575,7 +637,7 @@ nav ul li a {
   border: none;
   margin-top: 10px;
   max-width: 700px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: -30px;
 }
 
@@ -586,7 +648,7 @@ nav ul li a {
   border: none;
   margin-top: 10px;
   max-width: 400px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: -30px;
   width: 230px;
 }
