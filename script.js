@@ -7,4 +7,5 @@ menuToggle.addEventListener('click', () => {
 });
 menulink.forEach((link) => link.addEventListener('click', () => {
   nav.classList.remove('slide');
+  document.querySelector('.menu-toggle input').checked = false;
 }));
