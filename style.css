@@ -10,31 +10,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* nav start */
-nav {
-  display: flex;
-  background-color: #fff;
-  justify-content: space-around;
-  height: 70px;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  width: 40%;
-  justify-content: space-between;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* nav ul li a:hover {
-  color: black;
-} */
-
 /* welcome section start */
 .headline-section {
   background-image: url(IMG/Header_bg.svg);
@@ -95,7 +70,6 @@ nav ul li a {
 }
 
 /* Work Section */
-
 .hidden-heading {
   display: none;
 }
@@ -122,8 +96,6 @@ nav ul li a {
 }
 
 .work-name {
-  /* margin-top: 12px;
-  margin-bottom: 20px; */
   color: #172b4d;
   font-weight: 700;
   font-size: 32px;
@@ -198,20 +170,8 @@ nav ul li a {
   border-color: #2230d2;
 }
 
-/* Hamburger menu */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-}
-
 /* make it Responsive */
 @media screen and (max-width: 768px) {
-  nav ul {
-    width: 50%;
-  }
-
   .wrapper {
     width: 600px;
     margin: 0 auto;
@@ -226,17 +186,6 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 576px) {
-  nav ul {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    font-size: 20px;
-  }
-}
-
 .social-icon ul {
   display: flex;
   list-style: none;
@@ -247,7 +196,6 @@ nav ul li a {
 
 @media screen and (min-width: 992px) {
   /* header hero section */
-
   .headline-section {
     background-image: url(IMG/Desktop-header-bg.svg);
     justify-content: center;
@@ -297,9 +245,6 @@ nav ul li a {
 
   /* card styles */
   .work-container {
-    /* align-self: flex-start; */
-
-    /* margin-left: 46px; */
     margin-right: 46px;
     margin-top: 20px;
     width: 100%;
@@ -319,11 +264,8 @@ nav ul li a {
   }
 
   .work-name {
-    /* margin-top: 48px; */
     font-size: 40px;
     line-height: 52px;
-
-    /* margin-bottom: 20px; */
   }
 
   .work-info .info-main {
@@ -362,8 +304,6 @@ nav ul li a {
     font-size: 17px;
     font-weight: 500;
     line-height: 24px;
-
-    /* margin-top: 56px; */
   }
 
   .technologies {
@@ -575,7 +515,7 @@ nav ul li a {
   border: none;
   margin-top: 10px;
   max-width: 700px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: -30px;
 }
 
@@ -586,7 +526,7 @@ nav ul li a {
   border: none;
   margin-top: 10px;
   max-width: 400px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: -30px;
   width: 230px;
 }
