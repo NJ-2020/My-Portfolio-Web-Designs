@@ -5,4 +5,6 @@ const nav = document.querySelector('nav ul');
 menuToggle.addEventListener('click', () => {
   nav.classList.toggle('slide');
 });
-menulink.forEach((link) => link.addEventListener('click',()=>  nav.classList.toggle('slide')));
+menulink.forEach((link) => link.addEventListener('click', () => {
+  nav.classList.remove('slide');
+}));
