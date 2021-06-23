@@ -817,7 +817,7 @@ nav ul li a {
   padding: 10px 25px;
 }
 
-#overlay {
+.overlay {
   position: fixed;
   transition: 200ms ease-in-out;
   opacity: 0;
@@ -829,7 +829,7 @@ nav ul li a {
   pointer-events: none;
 }
 
-#overlay.active {
+.overlay.active {
   opacity: 1;
   pointer-events: all;
 }
@@ -859,4 +859,9 @@ nav ul li a {
   .modal {
     height: 600px;
   }
+}
+
+ul.modal-info li:nth-child(1) {
+  color: black;
+  font-weight: bold;
 }

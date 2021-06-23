@@ -12,7 +12,7 @@ menulink.forEach((link) => link.addEventListener('click', () => {
 
 const openModalButton = document.querySelectorAll('[data-modal-target]');
 const closeModalButton = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
+const overlay = document.querySelector('.overlay');
 
 openModalButton.forEach((button) => {
   button.addEventListener('click', () => {
