@@ -122,7 +122,6 @@ nav ul li a {
     margin-left: 30px;
     font-size: 30px;
     font-weight: bold;
-
   }
 
   nav ul.slide {
@@ -743,12 +742,13 @@ nav ul li a {
 }
 
 .modal-info li {
-  color: #4a4f59;
+  color: #7a869a;
   margin-left: 15px;
   align-items: center;
 }
 
 .modal-info li i {
+  color: #7a869a;
   margin-right: -10px;
 }
 
