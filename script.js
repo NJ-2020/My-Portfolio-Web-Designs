@@ -91,7 +91,6 @@ function showDetails(projectIndex) {
   <p class="description">
     ${projects[projectIndex].description}
   </p>
-
     <div class="tech-and-buttons">
       <ul class="technologies">
       ${(function usedTech() {
