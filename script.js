@@ -96,7 +96,6 @@ function showDetails(projectIndex) {
   <p class="description">
     ${projects[projectIndex].description}
   </p>
-
     <div class="tech-and-buttons">
       <ul class="technologies">
       ${(function usedTech() {
@@ -128,7 +127,6 @@ const projectsCode = projects.map(
   <img src="${project.image.link}" class="work-img" alt="${project.image.alt}" />
   <div class="work-container">
     <h2 class="work-name">${project.name}</h2>
-
     <ul class="work-info">
       <li class="info-main">${project.companyName}</li>
       <li class="info-main">${project.position}</li>
@@ -137,14 +135,12 @@ const projectsCode = projects.map(
     <p class="work-description">
     ${project.description}
     </p>
-
     <ul class="technologies">
     ${(function usedTech() {
     return project.technologies
       .map((tech) => `<li class="lang-section">${tech}</li>`)
       .join('');
   }())}
-
     </ul>
     <button class="btn details-btn work-btn" type="button" data-id="${
   project.id
