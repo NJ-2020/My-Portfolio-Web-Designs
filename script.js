@@ -37,7 +37,7 @@ const projects = [
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
     image: {
-      link: 'img/project4.png',
+      link: 'img/project1.png',
       alt: 'Multi-Post Stories screenshot',
     },
     liveSource: '#',
@@ -53,7 +53,7 @@ const projects = [
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ['html', 'css', 'javascript'],
     image: {
-      link: 'img/project1.png',
+      link: 'img/project2.svg',
       alt: 'Facebook 360screenshot',
     },
     liveSource: '#',
@@ -69,7 +69,7 @@ const projects = [
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
     image: {
-      link: 'img/project2.png',
+      link: 'img/project3.png',
       alt: 'Uber Navigation screenshot',
     },
     liveSource: '#',
