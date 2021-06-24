@@ -158,13 +158,13 @@ showButton.forEach((btn) => {
 
 // get local storage data
 const btn_contact = document.querySelector
-('.submit');
+  ('.submit');
 const subject = document.querySelector
-('.subject');
+  ('.subject');
 const email = document.querySelector
-('.email');
+  ('.email');
 const message = document.querySelector
-('.message');
+  ('.message');
 
 btn_contact.onclick = function() {
   const formInfo = {
