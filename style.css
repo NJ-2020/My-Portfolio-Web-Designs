@@ -137,7 +137,13 @@ nav ul li a {
 
   .header {
     height: 100vh;
-    background-image: url(./assets/header-shapes\ mobile.png);
+    background-image: url(img/Desktop-header-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-section form {
+    background-image: url(img/Header_bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -472,6 +478,12 @@ nav ul li a {
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
+  }
+
+  .contact-section form {
+    background-image: url(img/Desktop-header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top;
   }
 }
 
@@ -829,4 +841,8 @@ nav ul li a {
     line-height: 20px;
     margin: 5px;
   }
+}
+
+.status {
+  color: red;
 }
