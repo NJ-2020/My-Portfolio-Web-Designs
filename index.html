@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -24,7 +24,6 @@
       gtag("config", "G-L9EM4V5T72");
     </script>
     <!-- end of Google Analytic -->
-
     <title>Novell's Portfolio</title>
   </head>
 
@@ -32,11 +31,11 @@
     <!-- nav start -->
     <nav>
       <div class="logo">
-        <img src="IMG/my-logo.png" alt="">
+        <img src="img/my-logo.png" alt="" />
       </div>
       <ul>
         <li>
-          <a class="nav-link" href="#work">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li>
           <a class="nav-link" href="#about">About</a>
@@ -71,151 +70,30 @@
 
         <ul class="social-links">
           <li class="social-icon">
-            <a href="#"><img src="IMG/twiterIcon.svg" alt="Twitter icon" /></a>
+            <a href="#"><img src="img/twiterIcon.svg" alt="Twitter icon" /></a>
           </li>
           <li class="social-icon">
             <a href="#"
-              ><img src="IMG/linkedinIcon.svg" alt="Linkedin icon"
+              ><img src="img/linkedinIcon.svg" alt="Linkedin icon"
             /></a>
           </li>
           <li class="social-icon">
-            <a href="#"><img src="IMG/mIcon.svg" alt="Medium icon" /></a>
+            <a href="#"><img src="img/mIcon.svg" alt="Medium icon" /></a>
           </li>
           <li class="social-icon">
-            <a href="#"><img src="IMG/gitHubIcon.svg" alt="GitHub icon" /></a>
+            <a href="#"><img src="img/gitHubIcon.svg" alt="GitHub icon" /></a>
           </li>
           <li class="social-icon">
-            <a href="#"><img src="IMG/redIcon.svg" alt="AngelList icon" /></a>
+            <a href="#"><img src="img/redIcon.svg" alt="AngelList icon" /></a>
           </li>
         </ul>
       </div>
     </section>
-
-    <section id="work">
+    
+    <section class="projects filter" id="portfolio">
       <h2 class="hidden-heading">Works</h2>
-      <ul class="works-section">
-        <li class="work-card work-cardFirst">
-          <img
-            src="IMG/work-img/work-preview1.png"
-            class="work-img"
-            alt="Screenshot of Tonic website"
-          />
-
-          <div class="work-container">
-            <h3 class="work-name">Tonic</h3>
-            <div class="work-info">
-              <p class="info-main">CANOPY</p>
-              <p class="info-sep fa fa-circle"></p>
-              <p class="info-main">Back End Dev &nbsp;</p>
-              <p class="info-sep fa fa-circle"></p>
-              <p class="info-description info-main">2015</p>
-            </div>
-            <p class="work-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="technologies">
-              <li class="lang-section">html</li>
-              <li class="lang-section">css</li>
-              <li class="lang-section">javascript</li>
-            </ul>
-            <button type="button" class="work-btn">See Project</button>
-          </div>
-        </li>
-
-        <li class="work-card work-cardFirst">
-          <img
-            src="IMG/work-img/work-preview2.png"
-            class="work-img"
-            alt="Screenshot of Multi-Post Stories website"
-          />
-
-          <div class="work-container">
-            <h3 class="work-name">Multi-Post Stories</h3>
-            <div class="work-info">
-              <p class="info-main">Facebook</p>
-              <i class="info-sep fa fa-circle"></i>
-              <p class="info-description">Full Stack Dev &nbsp;</p>
-              <i class="info-sep fa fa-circle"></i>
-              <p class="info-description">2015</p>
-            </div>
-            <p class="work-description">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="technologies">
-              <li class="lang-section">html</li>
-              <li class="lang-section">Ruby on Rails</li>
-              <li class="lang-section">css</li>
-              <li class="lang-section">javascript</li>
-            </ul>
-            <button type="button" class="work-btn">See Project</button>
-          </div>
-        </li>
-
-        <li class="work-card work-cardFirst">
-          <img
-            src="IMG/work-img/work-preview3.svg"
-            class="work-img"
-            alt="Screenshot of Facebook 360 website"
-          />
-
-          <div class="work-container">
-            <h3 class="work-name">Facebook 360</h3>
-            <div class="work-info">
-              <p class="info-main">Facebook</p>
-              <i class="info-sep fa fa-circle"></i>
-              <p class="info-description">Full Stack Dev &nbsp;</p>
-              <i class="info-sep fa fa-circle"></i>
-              <p class="info-description">2015</p>
-            </div>
-            <p class="work-description">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-            <ul class="technologies">
-              <li class="lang-section">html</li>
-              <li class="lang-section">Ruby on Rails</li>
-              <li class="lang-section">css</li>
-              <li class="lang-section">javascript</li>
-            </ul>
-            <button type="button" class="work-btn">See Project</button>
-          </div>
-        </li>
-
-        <li class="work-card work-cardFirst">
-          <img
-            src="IMG/work-img/work-preview4.png"
-            class="work-img"
-            alt="Screenshot of Uber Navigation website"
-          />
-
-          <div class="work-container">
-            <h3 class="work-name">Uber Navigation</h3>
-            <div class="work-info">
-              <p class="info-main">Uber</p>
-              <i class="info-sep fa fa-circle"></i>
-              <p class="info-description">Lead Developer&nbsp;</p>
-              <i class="info-sep fa fa-circle"></i>
-              <p class="info-description">2018</p>
-            </div>
-            <p class="work-description">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-            <ul class="technologies">
-              <li class="lang-section">html</li>
-              <li class="lang-section">Ruby on Rails</li>
-              <li class="lang-section">css</li>
-              <li class="lang-section">javascript</li>
-            </ul>
-            <button type="button" class="work-btn">See Project</button>
-          </div>
-        </li>
-      </ul>
     </section>
+
     <section class="about" id="about">
       <div class="about-info">
         <div class="about-info-text">
@@ -232,27 +110,27 @@
           <ul class="social-links">
             <li>
               <a href="#">
-                <img src="IMG/twiterIcon.svg" alt="Twitter icon" />
+                <img src="img/twiterIcon.svg" alt="Twitter icon" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="IMG/linkedinIcon.svg" alt="Linkedin icon" />
+                <img src="img/linkedinIcon.svg" alt="Linkedin icon" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="IMG/mIcon.svg" alt="Medium icon" />
+                <img src="img/mIcon.svg" alt="Medium icon" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="IMG/gitHubIcon.svg" alt="GitHub icon" />
+                <img src="img/gitHubIcon.svg" alt="GitHub icon" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="IMG/redIcon.svg" alt="AngelList icon" />
+                <img src="img/redIcon.svg" alt="AngelList icon" />
               </a>
             </li>
           </ul>
@@ -266,14 +144,14 @@
               <p class="name">Langguages</p>
               <a href="#"
                 ><img
-                  src="IMG/arrDown.png"
+                  src="img/arrDown.png"
                   alt="Arrow icon to collapse section"
               /></a>
             </div>
             <ul class="inner-skills">
-              <li><img src="IMG/jsLogo.png" alt="JS Logo" />JavaScript</li>
-              <li><img src="IMG/htmlLogo.png" alt="HTML Logo" />HTML</li>
-              <li><img src="IMG/cssLogo.png" alt="CSS Logo" />CSS</li>
+              <li><img src="img/jsLogo.png" alt="JS Logo" />JavaScript</li>
+              <li><img src="img/htmlLogo.png" alt="HTML Logo" />HTML</li>
+              <li><img src="img/cssLogo.png" alt="CSS Logo" />CSS</li>
             </ul>
           </li>
           <li>
@@ -282,7 +160,7 @@
                 <p class="name">Frameworks</p>
                 <a href="#"
                   ><img
-                    src="IMG/arrRight.png"
+                    src="img/arrRight.png"
                     alt="Arrow icon to expand section"
                 /></a>
               </div>
@@ -294,7 +172,7 @@
                 <p class="name">Skills</p>
                 <a href="#"
                   ><img
-                    src="IMG/arrRight.png"
+                    src="img/arrRight.png"
                     alt="Arrow icon to expand section"
                 /></a>
               </div>
