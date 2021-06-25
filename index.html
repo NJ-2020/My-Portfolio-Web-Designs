@@ -189,9 +189,9 @@
         <form action="https://formspree.io/f/xnqlvedy" method="POST">
           <h2 class="contact-me-title">Contact Me</h2>
           <p class="contact-me-info">
-            If you have an application you are interested in developing, a feature
-            that you need built or a project that needs coding. I’d love to help
-            with it
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
           </p>
           <div class="form-input">
             <input
@@ -212,43 +212,44 @@
             />
             <div class="status"></div>
             <br />
-  
+
             <textarea
               name="message"
               class="message"
-              laceholder="Write your message here..."
+              placeholder="Write your message here..."
               cols="30"
               rows="10"
               required
               maxlength="500"
             ></textarea>
           </div>
-  
+
           <button type="submit" class="submit contact-btn">Get In Touch</button>
         </form>
       </section>
-      <script src="script.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-      <script type="text/javascript">
-        $(document).ready(function () {
-          $(".submit").click(function (event) {
-            // console.log('clicked button');
-  
-            var email = $(".email").val();
-            var email1 = $(".email");
-            var subject = $(".subject").val();
-            var message = $(".message").val();
-            var statuselm = $(".status");
-            let x = email.toLowerCase();
-            // No validation message appears unless has been filled.
-            statuselm.empty();
-  
-            if (x != email) {
-              statuselm.append("Email must be in lower case");
-              event.preventDefault();
-            }
-          });
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".submit").click(function (event) {
+          // console.log('clicked button');
+
+          var email = $(".email").val();
+          var email1 = $(".email");
+          var subject = $(".subject").val();
+          var message = $(".message").val();
+          var statuselm = $(".status");
+          let x = email.toLowerCase();
+          // No validation message appears unless has been filled.
+          statuselm.empty();
+
+          if (x != email) {
+            statuselm.append("Email must be in lower case");
+            event.preventDefault();
+          }
         });
-      </script>
-    </body>
+      });
+    </script>
+  </body>
 </html>
