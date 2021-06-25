@@ -89,7 +89,7 @@
         </ul>
       </div>
     </section>
-    
+
     <section class="projects filter" id="portfolio">
       <h2 class="hidden-heading">Works</h2>
     </section>
@@ -183,7 +183,7 @@
     </section>
 
     <section class="contact-section" id="contact">
-      <form action="https://formspree.io/f/mayajwnb" method="post">
+      <form action="https://formspree.io/f/xnqlvedy" method="post">
         <h2 class="contact-me-title">Contact Me</h2>
         <p class="contact-me-info">
           If you have an application you are interested in developing, a feature
@@ -194,28 +194,53 @@
           <input
             type="text"
             name="text"
-            class="form-control"
+            class="subject form-control"
             placeholder="Full Name"
             required
           /><br />
           <input
             type="email"
             name="email"
-            class="form-control"
+            class="email form-control"
             placeholder="Email"
             required
           /><br />
 
           <textarea
             name="message"
+            class="message"
             placeholder="Write your message here..."
             cols="30"
             rows="10"
           ></textarea>
         </div>
-        <button type="submit" class="contact-btn">Get In Touch</button>
+        <div class="status"></div>
+        <button type="submit" class="submit contact-btn">Get In Touch</button>
       </form>
     </section>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".submit").click(function (event) {
+          // console.log('clicked button');
+
+          var email = $(".email").val();
+          var subject = $(".subject");
+          var message = $(".message").val();
+          var statuselm = $(".status");
+          let x = email.toLowerCase();
+          // No validation message appears unless has been filled.
+          statuselm.empty();
+
+          if (x != email) {
+            statuselm.append("Email is not valid");
+            event.preventDefault();
+          } else {
+            statuselm.append("<div>Email is valid</div>");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
