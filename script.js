@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const menuToggle = document.querySelector('.menu-toggle input');
 const menulink = document.querySelectorAll('nav ul li a');
 const nav = document.querySelector('nav ul');
