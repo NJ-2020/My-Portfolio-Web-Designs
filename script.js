@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const menuToggle = document.querySelector('.menu-toggle input');
 const menulink = document.querySelectorAll('nav ul li a');
 const nav = document.querySelector('nav ul');
@@ -21,7 +22,7 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     image: {
-      link: 'img/project0.png',
+      link: 'IMG/project0.png',
       alt: 'Tonic screenshot',
     },
     liveSource: '#',
@@ -35,9 +36,9 @@ const projects = [
     year: 2015,
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    technologies: ['html', 'Ruby', 'css', 'javascript'],
     image: {
-      link: 'img/project1.png',
+      link: 'IMG/project4.png',
       alt: 'Multi-Post Stories screenshot',
     },
     liveSource: '#',
@@ -53,7 +54,7 @@ const projects = [
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ['html', 'css', 'javascript'],
     image: {
-      link: 'img/project2.svg',
+      link: 'IMG/project1.png',
       alt: 'Facebook 360screenshot',
     },
     liveSource: '#',
@@ -67,9 +68,9 @@ const projects = [
     year: 2018,
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    technologies: ['html', 'Ruby', 'css', 'javascript'],
     image: {
-      link: 'img/project3.png',
+      link: 'IMG/project2.png',
       alt: 'Uber Navigation screenshot',
     },
     liveSource: '#',
@@ -84,7 +85,7 @@ modalDetails.className = 'project-details';
 function showDetails(projectIndex) {
   const projectsCode = `
   <div class="details-container">
-  <span id="closeDetails"><i class="fas fa-times closeDetails"></i></span>
+  <span id="closeDetails" onclick="displaynoneblur()"><i class="fas fa-times closeDetails"></i></span>
   <h2 class="project-title">${projects[projectIndex].name}</h2>
     <ul class="work-info">
       <li class="info-main">${projects[projectIndex].companyName}</li>
@@ -96,16 +97,18 @@ function showDetails(projectIndex) {
   <p class="description">
     ${projects[projectIndex].description}
   </p>
+
     <div class="tech-and-buttons">
-      <ul class="technologies">
+      <ul class="technologies technologies-modal">
       ${(function usedTech() {
     return projects[projectIndex].technologies.map((tech) => `<li class="lang-section">${tech}</li>`).join('');
   }())}
       </ul>
       <div class="buttons">
         <a href="${projects[projectIndex].liveSource}" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
-        <a href="${projects[projectIndex].sourceCode}" class="btn">See Source <i class="fab fa-github"></i></a>
+        <a href="${projects[projectIndex].sourceCode}" class="btn">See Live <i class="fab fa-github"></i></a>
       </div>
+
     </div>
   </div>
   </div>`;
@@ -127,6 +130,7 @@ const projectsCode = projects.map(
   <img src="${project.image.link}" class="work-img" alt="${project.image.alt}" />
   <div class="work-container">
     <h2 class="work-name">${project.name}</h2>
+
     <ul class="work-info">
       <li class="info-main">${project.companyName}</li>
       <li class="info-main">${project.position}</li>
@@ -135,14 +139,16 @@ const projectsCode = projects.map(
     <p class="work-description">
     ${project.description}
     </p>
+
     <ul class="technologies">
     ${(function usedTech() {
     return project.technologies
       .map((tech) => `<li class="lang-section">${tech}</li>`)
       .join('');
   }())}
+
     </ul>
-    <button class="btn details-btn work-btn" type="button" data-id="${
+    <button class="btn details-btn work-btn" onclick="blurfunction()" type="button" data-id="${
   project.id
 }">See Project</button>
   </div>
@@ -156,3 +162,12 @@ showButton.forEach((btn) => {
     showDetails(event.target.dataset.id);
   });
 });
+
+const portfolio1 = document.querySelector('.blur-section');
+function blurfunction() {
+  portfolio1.classList.add('filter');
+}
+
+function displaynoneblur() {
+  portfolio1.classList.remove('filter');
+}
