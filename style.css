@@ -145,7 +145,7 @@ nav ul li a {
 
 /* welcome section start */
 .headline-section {
-  background-image: url(img/Header_bg.svg);
+  background-image: url(IMG/Header_bg.svg);
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: top;
@@ -365,7 +365,7 @@ nav ul li a {
 @media screen and (min-width: 992px) {
   /* header hero section */
   .headline-section {
-    background-image: url(img/Desktop-header-bg.svg);
+    background-image: url(IMG/Desktop-header-bg.svg);
     justify-content: center;
     align-items: center;
   }
@@ -746,13 +746,10 @@ nav ul li a {
   overflow: auto;
 }
 
-<<<<<<< HEAD
 .blur-section.filter {
   filter: blur(5px);
 }
 
-=======
->>>>>>> master
 .details-container {
   background-color: #fff;
   margin: 30px 16px;
@@ -761,12 +758,9 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   position: relative;
-<<<<<<< HEAD
   max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
-=======
->>>>>>> master
 }
 
 .closeDetails {
@@ -783,7 +777,6 @@ nav ul li a {
   margin-bottom: 15px;
 }
 
-<<<<<<< HEAD
 .project-info {
   display: flex;
   margin-top: 20px;
@@ -803,46 +796,30 @@ nav ul li a {
 .details-container img {
   width: 100%;
   max-width: 100%;
-=======
-.details-container img {
-  width: 100%;
->>>>>>> master
   margin-top: 10px;
 }
 
 .tech-and-buttons {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   margin-left: auto;
-=======
-  align-items: stretch;
->>>>>>> master
 }
 
 .buttons {
   display: flex;
-<<<<<<< HEAD
-=======
-  justify-content: center;
->>>>>>> master
   margin: 20px auto;
   width: 100%;
 }
 
-<<<<<<< HEAD
 .technologies-modal {
   width: 100px;
 }
 
-=======
->>>>>>> master
 .details-container .btn {
   padding: 15px 30px;
   font-size: 15px;
   line-height: 20px;
   margin: 5px;
-<<<<<<< HEAD
   color: #6070ff;
   border-radius: 9px;
   border: 1px solid #6070ff;
@@ -852,48 +829,4 @@ nav ul li a {
 .details-container .btn:hover {
   background-color: #6070ff;
   color: white;
-=======
-}
-
-@media (min-width: 1024px) and (max-width: 1439px) {
-  /* Details modal */
-  .details-container {
-    background-color: #fff;
-    margin: 60px 200px;
-    padding: 16px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .details-container .project-title {
-    margin: 0;
-  }
-
-  .details-container .project-info {
-    display: grid;
-    grid-template-columns: 65% 35%;
-    padding-right: 0;
-  }
-
-  .tech-and-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-  }
-
-  .details-container .btn {
-    padding: 7px;
-    font-size: 15px;
-    line-height: 20px;
-    margin: 5px;
-  }
->>>>>>> master
 }
