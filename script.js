@@ -22,7 +22,7 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     image: {
-      link: './img/project0.png',
+      link: 'IMG/project0.png',
       alt: 'Tonic screenshot',
     },
     liveSource: '#',
@@ -38,7 +38,7 @@ const projects = [
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: ['html', 'Ruby', 'css', 'javascript'],
     image: {
-      link: './img/project4.png',
+      link: 'IMG/project4.png',
       alt: 'Multi-Post Stories screenshot',
     },
     liveSource: '#',
@@ -54,7 +54,7 @@ const projects = [
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ['html', 'css', 'javascript'],
     image: {
-      link: './img/project1.png',
+      link: 'IMG/project1.png',
       alt: 'Facebook 360screenshot',
     },
     liveSource: '#',
@@ -70,7 +70,7 @@ const projects = [
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: ['html', 'Ruby', 'css', 'javascript'],
     image: {
-      link: './img/project2.png',
+      link: 'IMG/project2.png',
       alt: 'Uber Navigation screenshot',
     },
     liveSource: '#',
