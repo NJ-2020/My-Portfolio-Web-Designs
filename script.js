@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const menuToggle = document.querySelector('.menu-toggle input');
 const menulink = document.querySelectorAll('nav ul li a');
 const nav = document.querySelector('nav ul');
@@ -10,6 +11,70 @@ menulink.forEach((link) => link.addEventListener('click', () => {
   document.querySelector('.menu-toggle input').checked = false;
 }));
 // ------------- Portfolio Section ---------------
+const projects = [
+  {
+    id: 0,
+    name: 'Tonic',
+    companyName: 'CANOPY',
+    position: 'Back End Dev',
+    year: 2015,
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'javascript'],
+    image: {
+      link: 'IMG/project0.png',
+      alt: 'Tonic screenshot',
+    },
+    liveSource: '#',
+    sourceCode: '#',
+  },
+  {
+    id: 1,
+    name: 'Multi-Post Stories',
+    companyName: 'FACEEBOOK',
+    position: 'Full Stack Dev',
+    year: 2015,
+    description:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    technologies: ['html', 'Ruby', 'css', 'javascript'],
+    image: {
+      link: 'IMG/project4.png',
+      alt: 'Multi-Post Stories screenshot',
+    },
+    liveSource: '#',
+    sourceCode: '#',
+  },
+  {
+    id: 2,
+    name: 'Facebook 360',
+    companyName: 'FACEEBOOK',
+    position: 'Full Stack Dev',
+    year: 2015,
+    description:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    technologies: ['html', 'css', 'javascript'],
+    image: {
+      link: 'IMG/project1.png',
+      alt: 'Facebook 360screenshot',
+    },
+    liveSource: '#',
+    sourceCode: '#',
+  },
+  {
+    id: 3,
+    name: 'Uber Navigation',
+    companyName: 'Uber',
+    position: 'Lead Developer',
+    year: 2018,
+    description:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    technologies: ['html', 'Ruby', 'css', 'javascript'],
+    image: {
+      link: 'IMG/project2.png',
+      alt: 'Uber Navigation screenshot',
+    },
+    liveSource: '#',
+    sourceCode: '#',
 const projects = [{
   id: 0,
   name: 'Tonic',
@@ -79,7 +144,7 @@ modalDetails.className = 'project-details';
 function showDetails(projectIndex) {
   const projectsCode = `
   <div class="details-container">
-  <span id="closeDetails"><i class="fas fa-times closeDetails"></i></span>
+  <span id="closeDetails" onclick="displaynoneblur()"><i class="fas fa-times closeDetails"></i></span>
   <h2 class="project-title">${projects[projectIndex].name}</h2>
     <ul class="work-info">
       <li class="info-main">${projects[projectIndex].companyName}</li>
@@ -93,15 +158,16 @@ function showDetails(projectIndex) {
   </p>
 
     <div class="tech-and-buttons">
-      <ul class="technologies">
+      <ul class="technologies technologies-modal">
       ${(function usedTech() {
     return projects[projectIndex].technologies.map((tech) => `<li class="lang-section">${tech}</li>`).join('');
   }())}
       </ul>
       <div class="buttons">
         <a href="${projects[projectIndex].liveSource}" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
-        <a href="${projects[projectIndex].sourceCode}" class="btn">See Source <i class="fab fa-github"></i></a>
+        <a href="${projects[projectIndex].sourceCode}" class="btn">See Live <i class="fab fa-github"></i></a>
       </div>
+
     </div>
   </div>
   </div>`;
@@ -141,7 +207,7 @@ const projectsCode = projects.map(
   }())}
 
     </ul>
-    <button class="btn details-btn work-btn" type="button" data-id="${
+    <button class="btn details-btn work-btn" onclick="blurfunction()" type="button" data-id="${
   project.id
 }">See Project</button>
   </div>
@@ -155,7 +221,15 @@ showButton.forEach((btn) => {
     showDetails(event.target.dataset.id);
   });
 });
+const portfolio1 = document.querySelector('.blur-section');
+function blurfunction() {
+  portfolio1.classList.add('filter');
+}
 
+function displaynoneblur() {
+  portfolio1.classList.remove('filter');
+}
+=======
 // get local storage data
 // eslint-disable-next-line camelcase
 const btn_contact = document.querySelector('.submit');
