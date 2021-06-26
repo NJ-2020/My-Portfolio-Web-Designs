@@ -647,7 +647,11 @@ nav ul li a {
 }
 
 .contact-section form {
-  background-color: #0f22cc;
+  background-color: #6070ff;
+  background-image: url(IMG/contactFormDesktopBg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   padding: 100px;
   text-align: center;
 }
@@ -701,7 +705,7 @@ nav ul li a {
   padding: 12px;
   outline: none;
   border: none;
-  margin-top: 10px;
+  margin-top: -25px;
   max-width: 100%;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
@@ -786,6 +790,13 @@ nav ul li a {
   .project-info {
     display: block;
   }
+  .contact-section form {
+    background-color: #6070ff;
+    background-image: url(IMG/contact-form-mobile-shapes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+  }
 }
 
 .project-info p {
@@ -829,4 +840,10 @@ nav ul li a {
 .details-container .btn:hover {
   background-color: #6070ff;
   color: white;
+}
+
+.status {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: red;
 }
