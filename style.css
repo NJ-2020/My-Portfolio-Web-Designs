@@ -654,6 +654,8 @@ nav ul li a {
   background-size: contain;
   padding: 100px;
   text-align: center;
+  margin-top: -50px;
+  border-top-left-radius: 80px;
 }
 
 .contact-me-title {
