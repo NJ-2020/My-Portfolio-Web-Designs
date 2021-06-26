@@ -75,66 +75,7 @@ const projects = [
     },
     liveSource: '#',
     sourceCode: '#',
-const projects = [{
-  id: 0,
-  name: 'Tonic',
-  companyName: 'CANOPY',
-  position: 'Back End Dev',
-  year: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  technologies: ['html', 'css', 'javascript'],
-  image: {
-    link: 'img/project0.png',
-    alt: 'Tonic screenshot',
   },
-  liveSource: '#',
-  sourceCode: '#',
-},
-{
-  id: 1,
-  name: 'Multi-Post Stories',
-  companyName: 'FACEEBOOK',
-  position: 'Full Stack Dev',
-  year: 2015,
-  description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
-  image: {
-    link: 'img/project1.png',
-    alt: 'Multi-Post Stories screenshot',
-  },
-  liveSource: '#',
-  sourceCode: '#',
-},
-{
-  id: 2,
-  name: 'Facebook 360',
-  companyName: 'FACEEBOOK',
-  position: 'Full Stack Dev',
-  year: 2015,
-  description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-  technologies: ['html', 'css', 'javascript'],
-  image: {
-    link: 'img/project2.svg',
-    alt: 'Facebook 360screenshot',
-  },
-  liveSource: '#',
-  sourceCode: '#',
-},
-{
-  id: 3,
-  name: 'Uber Navigation',
-  companyName: 'Uber',
-  position: 'Lead Developer',
-  year: 2018,
-  description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
-  image: {
-    link: 'img/project3.png',
-    alt: 'Uber Navigation screenshot',
-  },
-  liveSource: '#',
-  sourceCode: '#',
-},
 ];
 
 const modalDetails = document.createElement('div');
@@ -221,6 +162,7 @@ showButton.forEach((btn) => {
     showDetails(event.target.dataset.id);
   });
 });
+
 const portfolio1 = document.querySelector('.blur-section');
 function blurfunction() {
   portfolio1.classList.add('filter');
@@ -229,18 +171,3 @@ function blurfunction() {
 function displaynoneblur() {
   portfolio1.classList.remove('filter');
 }
-// get local storage data
-// eslint-disable-next-line camelcase
-const btn_contact = document.querySelector('.submit');
-const subject = document.querySelector('.subject');
-const email = document.querySelector('.email');
-const message = document.querySelector('.message');
-
-btn_contact.onclick = () => {
-  const formInfo = {
-    name: subject.value,
-    email: email.value,
-    message: message.value,
-  };
-  localStorage.setItem('formInfo', JSON.stringify(formInfo));
-};
